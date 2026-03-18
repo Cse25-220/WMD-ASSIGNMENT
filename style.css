@@ -1,50 +1,50 @@
-body
-{
+body {
     background-color: #1f2522;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
-    
-.navbar a.active
-{
-    background-color: #2e653d;
-    overflow: hidden;
-
-    .container
-    {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 14px 20px;
-
-        .logo
-        {
-            color: #ffffff;
-            font-size: 24px;
-            font-weight: bold;
-            text-decoration: none;
-        }
-
-        .nav-links
-        {
-            display: flex;
-
-            .nav-link
-            {
-                color: #ffffff;
-                text-decoration: none;
-                padding: 0 15px;
-
-                &:hover
-                {
-                    color: #ffcc00;
-                }
-            }
-        }
-    }
-
 }
-main
-{
 
+/* Navbar */
+.navbar {
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 20px;
+}
+
+/* Logo */
+.nav-logo {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Nav Links */
+.nav-menu {
+    display: flex;
+}
+
+.nav-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0 15px;
+    transition: 0.3s;
+}
+
+/* Hover Effect */
+.nav-menu a:hover {
+    color: #ffcc00;
+}
+
+/* Active Link */
+.nav-menu a.active {
+    background-color: #2e653d;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
