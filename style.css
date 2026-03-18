@@ -5,12 +5,44 @@ body
     margin: 0;
     padding: 20px;
     
-    class:"navbar"
+.navbar
+{
+    background-color: #333333;
+    overflow: hidden;
+
+    .container
     {
-        background-color: #333;
-        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 14px 20px;
+
+        .logo
+        {
+            color: #ffffff;
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .nav-links
+        {
+            display: flex;
+
+            .nav-link
+            {
+                color: #ffffff;
+                text-decoration: none;
+                padding: 0 15px;
+
+                &:hover
+                {
+                    color: #ffcc00;
+                }
+            }
+        }
     }
-    "
+
 }
 main
 {
