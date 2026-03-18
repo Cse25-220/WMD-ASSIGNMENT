@@ -5,9 +5,9 @@ body
     margin: 0;
     padding: 20px;
     
-.navbar
+.navbar a.active
 {
-    background-color: #333333;
+    background-color: #2e653d;
     overflow: hidden;
 
     .container
