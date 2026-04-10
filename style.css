@@ -8,7 +8,6 @@
     .top-bar a:hover { text-decoration: underline; }
 
     .nav-bar { display: flex; align-items: center; padding: 12px 40px; border-bottom: 1px solid #eee; gap: 1.5rem; background: #fff; }
-    .logo { font-size: 24px; font-weight: bold; margin-right: 2rem; color: #111; }
     .logo img { height: 32px; cursor: pointer; }
     .nav-links { display: flex; gap: 1.5rem; }
     .nav-links a { font-size: 15px; color: #1a73e8; text-decoration: none; }
