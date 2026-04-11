@@ -77,11 +77,40 @@
         .promo-banner { flex-direction: column; text-align: center; gap: 15px; }
         .footer-cols { grid-template-columns: 1fr 1fr; }
         .footer-bottom { flex-direction: column; gap: 10px; }
+        .contact-info { margin-top: 20px;}
+        .contact-container{padding: 0 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);}
+    }
 
         /* smaller phone support */
         @media (max-width: 480px) {
             .featured-grid { grid-template-columns: 1fr; }
             .footter-cols { grid-template-columns: 1fr; }
             .hero h1 { font-size: 20px; }
-        }
+            .contact-info { margin-top: 20px;}
+            
+        
     }
+
+
+    /*Contact Us Page*/
+
+    form{ display: flex; flex-direction: column; gap: 14px; max-width: 0; margin: 0 auto;  }
+    input,textarea{ padding: 12px; border: 1px solid #ccc; border-radius: 8px; font-size: 14px; }
+    button{ background: #1a73e8; color: #fff; border: none; border-radius: 6px; padding: 12px; font-size: 14px; cursor: pointer; }
+    textarea{ min-height: 120px; resize: none;}
+
+    button:hover{ background: #1558b0; width: 100%;}
+    button:active{ background: #0d3a7b; width: 100%; }
+    button:focus{ background: #0d3a7b; width: 100%; }
+    button { margin-top: 10px; background: #1a73e8; color: #fff; border: none; border-radius: 8px; padding: 12px; font-size: 14px; cursor: pointer; transition: background .15s, width .15s; font-weight: 600; }
+
+     label{ font-size: 13px; font-weight: 600; color: #444; margin-bottom: 4px; 
+     font { display: flex; flex-direction: column; gap: 10px; };
+
+     .contact-container{ max-width: 500px; margin: 0px auto; background: #f0f0f0; padding: 20px; border-radius: 14px;}
+     .contact-info {margin-top: 30px;}
+    
+
+
+}
+
