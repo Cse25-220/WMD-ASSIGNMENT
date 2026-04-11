@@ -5,13 +5,13 @@
 
     .top-bar { display: flex; justify-content: flex-end; gap: 2rem; padding: 8px 40px; border-bottom: 1px solid #eee; background: #fff; }
     .top-bar a { font-size: 13px; color: #1a73e8; text-decoration: none; }
-    .top-bar a:hover { text-decoration: underline; }
+    .top-bar a:hover { text-decoration: underline; border: chartreuse; border-radius: 10%; }
 
     .nav-bar { display: flex; align-items: center; padding: 12px 40px; border-bottom: 1px solid #eee; gap: 1.5rem; background: #fff; }
     .logo img { height: 32px; cursor: pointer; }
     .nav-links { display: flex; gap: 1.5rem; }
     .nav-links a { font-size: 15px; color: #1a73e8; text-decoration: none; }
-    .nav-links a:hover { text-decoration: underline; }
+    .nav-links a:hover { text-decoration: underline; border: chartreuse; border-radius: 10%; }
     .search-bar { display: flex; align-items: center; border: 1px solid #ccc; border-radius: 24px; padding: 8px 16px; gap: 8px; margin-left: auto; min-width: 260px; }
     .search-bar input { border: none; outline: none; font-size: 14px; width: 100%; background: transparent; }
     .nav-icons { display: flex; gap: 16px; align-items: center; margin-left: 16px; }
@@ -59,4 +59,6 @@
     .footer-socials { display: flex; gap: 12px; }
     .footer-socials svg { width: 16px; height: 16px; color: #999; cursor: pointer; }
     .footer-socials svg:hover { color: #1a73e8; }
+
+    .
   
