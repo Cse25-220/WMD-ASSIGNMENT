@@ -12,7 +12,7 @@
     .nav-links { display: flex; gap: 1.5rem; }
     .nav-links a { font-size: 15px; color: #1a73e8; text-decoration: none; }
     .nav-links a:hover { text-decoration: underline; border: chartreuse; border-radius: 10%; }
-    .search-bar { display: flex; align-items: center; border: 1px solid #ccc; border-radius: 24px; padding: 8px 16px; gap: 8px; margin-left: auto; min-width: 260px; }
+    .search-bar { display: flex; align-items: center; border: 1px solid #ccc; border-radius: 24px; padding: 8px 16px; gap: 8px; margin-left: auto; min-width: 0; }
     .search-bar input { border: none; outline: none; font-size: 14px; width: 100%; background: transparent; }
     .nav-icons { display: flex; gap: 16px; align-items: center; margin-left: 16px; }
     .nav-icons svg { width: 22px; height: 22px; cursor: pointer; color: #111; }
@@ -60,5 +60,28 @@
     .footer-socials svg { width: 16px; height: 16px; color: #999; cursor: pointer; }
     .footer-socials svg:hover { color: #1a73e8; }
 
-    
-  
+    @media (max-width: 768px) {
+        .nav-bar { flex-wrap: wrap; padding: 12px 20px; }
+        .search-bar { margin: 10px 0; width: 100%; }
+        .nav-icons { margin-left: 0; }
+        .category-grid { grid-template-columns: 1fr; }
+        .featured-grid { grid-template-columns: repeat(2, 1fr); }
+        .promo-banner { flex-direction: column; text-align: center; gap: 16px; }
+        .footer-cols { grid-template-columns: repeat(2, 1fr); }
+        .nav-links { width: 100%; justify-content: center; margin-top: 10px; }
+        .hero { padding: 40px 20px; }
+        .hero h1 { font-size: 24px; }
+        .main-content { padding: 20px; }
+        .category-grid { grid-template-columns: 1fr; }
+        .featured-grid { grid-template-columns: 1fr  1fr; }
+        .promo-banner { flex-direction: column; text-align: center; gap: 15px; }
+        .footer-cols { grid-template-columns: 1fr 1fr; }
+        .footer-bottom { flex-direction: column; gap: 10px; }
+
+        /* smaller phone support */
+        @media (max-width: 480px) {
+            .featured-grid { grid-template-columns: 1fr; }
+            .footter-cols { grid-template-columns: 1fr; }
+            .hero h1 { font-size: 20px; }
+        }
+    }
