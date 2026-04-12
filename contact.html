@@ -47,29 +47,41 @@
     </div>
   </div>
 
-  <!-- Contact Form -->
-  <div class="contact-form">
-    <h2>CONTACT US!</h2>
-    <form>
-    <form action="submit_contact.php" method="POST">
-    <label for="name">Name:</label>
-    <input type="text" name="name" id="name" aria-placeholder="Name">
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" placeholder="Email">
-    <label for="message">Message:</label>
-    <textarea placeholder="Message" name="message" id="message"></textarea>
-    <button type="submit">SEND MESSAGE</button>
-    </form>
+  <!-- Contact Form and info -->
+
+  /*left text and info */
+
+  <div class ="contact-wrapper">
+    
+    <div class="contact-left>
+      <h2>Contact Us</h2>
+      <p>.“Need help, feedback, or have a question? Our Kickzone team is ready to support you—just like a perfect assist on the pitch.”</p>
+
+      <div class="contact-info">
+        <h3>Contact Information</h3>
+        <p><strong>Email:</strong> boagomotshwarakgole@gmail.com</p>
+        <p><strong>Phone:</strong> 71584434</p>
+        <p><strong>Address:</strong> 123 Sports Street, Gaborone</p>
+      </div>
+    </div>
+
+  /*right form */
+    <div class="contact-right">
+      <h2><strong>Send us a Message</strong></h2>
+      <form action="submit_contact.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" placeholder="Your Name">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your Email">
+        <label for="message">Message:</label>
+        <textarea placeholder="Your Message" name="message" id="message"></textarea>
+        <button type="submit">SEND MESSAGE</button>
+      </form>
+    </div>
   </div>
 
-  <div class="contact info">
-    <h3>Contact Information</h3>
-    <p>123 Sports Street, Athlete City</p>
-    <p>Phone: 71584434 </p>
-    <p>Email: boagomotshwarakgole@gmail.com</p>
-  </div>
 
-
+  
 
   // Footer
 
