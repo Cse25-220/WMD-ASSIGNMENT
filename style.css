@@ -206,3 +206,72 @@
     padding: 40px 20px;
   }
 }
+
+
+/* ── About Page ── */
+
+.About-Header {
+  padding: 40px;
+
+}
+
+.About-Header h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 20px;
+}
+
+.About-content {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+
+}
+
+.About-content img {
+  width: 300px;
+  height:  200px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(9, 69, 23, 0.06);
+  object-fit: cover;
+
+}
+
+.About-content p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.7;
+  max-width: 500px;
+
+}
+
+/* team section */
+
+.Team-section {
+  padding: 40px;
+
+}
+
+.Team-section h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 20px;
+}
+
+.team-members {
+  display: flex;
+  gap: 20px;
+  
+}
+
+.team-member {
+  flex: 1;
+  background: #f0f0f0;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  object-fit: cover;
+}
+
