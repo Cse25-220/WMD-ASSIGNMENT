@@ -278,14 +278,14 @@
 
 <!--shop page edits-->
 
-.shop-layout
+.shop-layout {
   display: grid;
   grid-template-columns: 250px 3fr;   /*sidebar and products*/
   gap: 20px;
   padding: 20px;
 }
 
-.s {
+.sidebar {
   background: #1a1a1a;
   padding: 20px;
   border-radius: 10px;
