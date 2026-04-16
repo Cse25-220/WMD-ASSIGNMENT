@@ -276,15 +276,6 @@
 }
 
 
-<!--shop page edits-->
-
-.shop-layout {
-  display: grid;
-  grid-template-columns: 250px 3fr;   /*sidebar and products*/
-  gap: 20px;
-  padding: 20px;
-}
-
 .sidebar {
   background: #1a1a1a;
   padding: 20px;
@@ -311,6 +302,7 @@
   border: none;
   border-radius: 5px;
 }
+
 
 .products-container {
   display: grid;
@@ -358,4 +350,3 @@
     grid-template-columns: 1fr;
   }
 }
-
