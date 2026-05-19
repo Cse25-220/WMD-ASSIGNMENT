@@ -300,11 +300,26 @@ body {
 }
 
 .img-placeholder-large {
-  width: 300px; /* Fixed width for the image */
-  min-height: 200px;
-  background-color: #333;
-  flex-shrink: 0; /* Prevents the image from shrinking if text gets too long */
+  /* --- NEWS PAGE IMAGES --- */
+
+/* Main News Feed Images (Left Column) */
+.news-list-img {
+  width: 300px;         /* Keeps the landscape rectangle width from your wireframe */
+  height: 200px;        /* Fixes the height so all list items line up evenly */
+  object-fit: cover;    /* Crops and scales smoothly without distorting the picture */
+  flex-shrink: 0;       /* VERY IMPORTANT: Stops Flexbox from squishing the image width */
 }
+
+/* Trending News Thumbnails (Right Column Sidebar) */
+.trending-thumb {
+  width: 60px;          /* Makes a clean, tiny perfect square */
+  height: 60px;
+  object-fit: cover;    /* Centers the main focus of the image within the small box */
+  border-radius: 4px;   /* Slightly rounds the corners to look polished */
+  flex-shrink: 0;       /* Stops the text from pushing the image into a squished rectangle */
+}
+}
+  
 
 .news-content {
   padding: 1.5rem 1.5rem 1.5rem 0;
@@ -388,11 +403,24 @@ body {
 }
 
 .img-placeholder-small {
-  width: 60px;
+  /* --- NEWS PAGE IMAGES --- */
+
+/* Main News Feed Images (Left Column) */
+.news-list-img {
+  width: 300px;         /* Keeps the landscape rectangle width from your wireframe */
+  height: 200px;        /* Fixes the height so all list items line up evenly */
+  object-fit: cover;    /* Crops and scales smoothly without distorting the picture */
+  flex-shrink: 0;       /* VERY IMPORTANT: Stops Flexbox from squishing the image width */
+}
+
+/* Trending News Thumbnails (Right Column Sidebar) */
+.trending-thumb {
+  width: 60px;          /* Makes a clean, tiny perfect square */
   height: 60px;
-  background-color: #333;
-  border-radius: 4px;
-  flex-shrink: 0;
+  object-fit: cover;    /* Centers the main focus of the image within the small box */
+  border-radius: 4px;   /* Slightly rounds the corners to look polished */
+  flex-shrink: 0;       /* Stops the text from pushing the image into a squished rectangle */
+}
 }
 
 .trending-item h4 {
