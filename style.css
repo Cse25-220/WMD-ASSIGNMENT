@@ -220,3 +220,159 @@ body {
   margin-top: 1rem;
 }
 
+
+/* --- NEWS PAGE SPECIFIC STYLES --- */
+
+/* Reusable container for internal pages */
+.page-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+/* Breadcrumbs & Title */
+.page-header {
+  margin-bottom: 2rem;
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 1rem;
+}
+
+.breadcrumbs {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.breadcrumbs a {
+  color: var(--text-main);
+  text-decoration: none;
+}
+
+.page-header h1 {
+  font-size: 2rem;
+}
+
+/* Page Layout (Grid) */
+.news-page-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* 66% width for news, 33% width for sidebar */
+  gap: 3rem;
+}
+
+/* Horizontal News Cards (Flexbox) */
+.news-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; /* Space between each article */
+}
+
+.news-list-card {
+  display: flex;
+  background-color: var(--bg-card);
+  border-radius: 8px;
+  overflow: hidden;
+  gap: 1.5rem; /* Space between image and text */
+}
+
+.img-placeholder-large {
+  width: 300px; /* Fixed width for the image */
+  min-height: 200px;
+  background-color: #333;
+  flex-shrink: 0; /* Prevents the image from shrinking if text gets too long */
+}
+
+.news-content {
+  padding: 1.5rem 1.5rem 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.news-content h2 {
+  font-size: 1.3rem;
+  margin: 0.5rem 0;
+}
+
+.news-content .excerpt {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+/* Sidebar Widgets */
+.widget {
+  background-color: var(--bg-card);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.widget-title {
+  font-size: 1rem;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Category Buttons */
+.category-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.category-btn {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: var(--text-main);
+  text-decoration: none;
+  font-size: 0.9rem;
+  background-color: transparent;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.category-btn:hover {
+  background-color: #2A2A2A;
+}
+
+.category-btn.active {
+  background-color: var(--accent-green);
+  color: white;
+  font-weight: bold;
+}
+
+/* Trending List Mini-Cards */
+.trending-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.trending-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  color: var(--text-main);
+}
+
+.trending-item:hover h4 {
+  color: var(--accent-green);
+}
+
+.img-placeholder-small {
+  width: 60px;
+  height: 60px;
+  background-color: #333;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.trending-item h4 {
+  font-size: 0.85rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
