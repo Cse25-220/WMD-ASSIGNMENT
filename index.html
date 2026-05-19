@@ -1,53 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MatchDay central - Home</title>
-    <link rel="stylesheet" href="style.css">
-</html>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Match Day Central</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
-<header class="navbar">
-  <div class="nav-brand">
-    <span class = "logo-icon"><img src="hello.png" alt="MatchDay Central Logo">
-      <span class= "logo-text">MatchDay Central<span class ="green text">CENTRAL</span>
-    </span>
 
-    <nav class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="news.html">News</a>
-      <a href="fixtures.html">Fixtures</a>
-      <a href="results.html">Results</a>
-      <a href="contact.html">Contact</a>
-  </div>
-  </header>
+    //Nav bar-----
 
-<main class="home-container">
+    <header class="navbar">
+        <div class="nav-brand">
+            <span class="logo-text">MATCH DAY <span class="green-text>CENTRAL"</span>
+        </span>
+            </div>
 
-  <section class="hero-banner">
-    <div class="hero-content">
-      <span class="breaking-badge">BREAKING NEWS</span>
-      <h1>CITY STUN REAL MADRID IN UCL THRILLER!</h1>
-      <p>A stunning comeback sees Man City defeat Real Madrid 4-3 in a dramatic night at the Etihad.</p>
-      <button class="cta-btn">READ FULL STORY</button>
-    </div>
-  </section>
+        
+    <nav class="nav-menu">
+        <a href="index.html" class="nav-link active">HOME</a>
+        <a href="news.html" class="nav-link">NEWS</a>
+        <a href="T-A-L.html" class="nav-link">TEAMS & LEAGUES</a>
+        <a href="F&R.html" class="nav-link">FIXTURES & RESULTS</a>
+        <a href="contact.html" class="nav-link">CONTACT</a>
+    </nav>
+    <div class="nav-search">
+        <button class="search-trigger">🔍</button>
+        </div>
+    </header>
 
-  <div class="content-layout">
-    
-    <section class="main-stories">
-      <div class="placeholder-box">Latest News Grid Placeholder</div>
+    //Breaking news//
+
+    <main class="home-container">
+
+    <section class="hero-banner">
+      <div class="hero-content">
+        <span class="breaking-badge">BREAKING NEWS</span>
+        <h1>CITY STUN REAL MADRID IN UCL THRILLER!</h1>
+        <p>A stunning comeback sees Man City defeat Real Madrid 4-3 on a dramatic night at the Etihad.</p>
+        <button class="cta-btn">READ FULL STORY</button>
+      </div>
     </section>
 
-    <aside class="sidebar">
-      <div class="placeholder-box">Upcoming Fixtures Placeholder</div>
-    </aside>
 
-  </div>
-</main>
+    
+<div class="content-layout">
+      
+      <section class="main-stories">
+        <div class="section-header">
+          <h2>LATEST NEWS</h2>
+          <a href="news.html" class="view-all">VIEW ALL NEWS</a>
+        </div>
+        
+        <div class="news-grid">
+          <article class="news-card">
+            <div class="img-placeholder"></div>
+            <span class="tag">TRANSFER NEWS</span>
+            <h3>Mbappé Set to Join Real Madrid</h3>
+            <p class="date">23 May 2024</p>
+          </article>
 
-<footer class="main-footer">
-  <div class="placeholder-box">Footer Links & Newsletter Placeholder</div>
-</footer>
+          <article class="news-card">
+            <div class="img-placeholder"></div>
+            <span class="tag">PREMIER LEAGUE</span>
+            <h3>Arsenal Keep Title Hopes Alive</h3>
+            <p class="date">23 May 2024</p>
+          </article>
+
+          <article class="news-card">
+            <div class="img-placeholder"></div>
+            <span class="tag">CHAMPIONS LEAGUE</span>
+            <h3>Dortmund Reach UCL Final</h3>
+            <p class="date">22 May 2024</p>
+          </article>
+        </div>
+      </section>
+
+      <aside class="sidebar">
+        <div class="section-header">
+          <h2>UPCOMING FIXTURES</h2>
+        </div>
+        <ul class="fixture-list">
+          <li class="fixture-row">
+            <div class="team home"><span>Man Utd</span></div>
+            <div class="match-info">
+              <span class="vs">VS</span>
+              <span class="date">25 May</span>
+            </div>
+            <div class="team away"><span>Liverpool</span></div>
+          </li>
+          <li class="fixture-row">
+            <div class="team home"><span>Arsenal</span></div>
+            <div class="match-info">
+              <span class="vs">VS</span>
+              <span class="date">25 May</span>
+            </div>
+            <div class="team away"><span>Chelsea</span></div>
+          </li>
+        </ul>
+        <button class="view-all-btn">VIEW ALL FIXTURES</button>
+      </aside>
+
+    </div>
+  </main>
+
+  <footer class="main-footer">
+    <div class="footer-content">
+      <div class="nav-brand">
+        <span class="logo-icon">⚽</span>
+        <span class="logo-text">MATCH DAY <span class="green-text">CENTRAL</span></span>
+      </div>
+      <p>&copy; 2024 Match Day Central. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
+
+
