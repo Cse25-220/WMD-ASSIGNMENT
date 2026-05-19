@@ -376,3 +376,111 @@ body {
   line-height: 1.4;
 }
 
+/* --- TEAMS & LEAGUES SPECIFIC STYLES --- */
+
+.sub-section-title {
+  font-size: 1.1rem;
+  color: var(--text-main);
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
+}
+
+/* Popular Teams Row Setup */
+.teams-flex-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap; /* Allows wrapping smoothly on smaller tablet views */
+}
+
+.team-badge-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  flex: 1;
+  min-width: 160px; /* Prevents cards from getting too squished */
+  padding: 1.5rem;
+  text-align: center;
+  transition: border-color 0.2s ease;
+}
+
+.team-badge-card:hover {
+  border-color: var(--accent-green);
+}
+
+.badge-placeholder {
+  font-size: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.team-badge-card h3 {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.centered-action {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+/* --- LEAGUE LEADERBOARD TABLE --- */
+.table-responsive-container {
+  width: 100%;
+  overflow-x: auto; /* Adds a horizontal scrollbar *only* if screen size gets incredibly small */
+}
+
+.leaderboard-table {
+  width: 100%;
+  border-collapse: collapse; /* Merges standard cell borders together for a clean look */
+  background-color: var(--bg-card);
+  border-radius: 8px;
+  overflow: hidden; /* Clips row background corners to the table's border radius */
+}
+
+/* Table Headers Styling */
+.leaderboard-table th {
+  background-color: #1A1A1A;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Table Body Cells Styling */
+.leaderboard-table td {
+  padding: 1.2rem 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* Utility alignments to keep text columns left-aligned and numbers centered */
+.leaderboard-table .align-left {
+  text-align: left;
+}
+
+/* Highlight styles for the table row item positioning */
+.pos-num {
+  font-weight: bold;
+  color: var(--text-muted);
+  width: 60px;
+}
+
+.pos-num.highlight {
+  color: var(--accent-green);
+}
+
+.pts-col {
+  font-weight: 800;
+  color: var(--accent-green);
+}
+
+/* Subtle Row Striping/Hover Effects */
+.leaderboard-table tbody tr:hover {
+  background-color: #242424;
+}
+
