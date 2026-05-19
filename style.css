@@ -280,15 +280,35 @@ body {
 /* Page Layout (Grid) */
 .news-page-layout {
   display: grid;
-  grid-template-columns: 2fr 1fr; /* 66% width for news, 33% width for sidebar */
-  gap: 3rem;
+  grid-template-columns: 2fr 1fr; /* Forces 66% width for news, 33% for sidebar */
+  gap: 2.5rem;                    /* Clean spacing gap between columns */
+  align-items: start;             /* Keeps the sidebar from stretching vertically */
 }
 
-/* Horizontal News Cards (Flexbox) */
-.news-list {
+/* 2. The Card Container */
+.news-list-card {
+  display: flex;                  /* Forces image and text to sit side-by-side */
+  background-color: var(--bg-card);
+  border-radius: 8px;
+  overflow: hidden;               /* Clips the image corners to the card's border radius */
+  gap: 1.5rem;                    /* Spacing between image and text content */
+}
+
+/* 3. THE FIX: Constrain the News Image */
+.news-list-img {
+  width: 280px;         /* Explicit width for the horizontal card layout */
+  height: 180px;        /* Explicit uniform height */
+  object-fit: cover;    /* Centers and crops the photo safely without stretching it */
+  flex-shrink: 0;       /* CRITICAL: Stops the text from squishing the image width */
+  display: block;
+}
+
+/* 4. Text Container Positioning */
+.news-content {
+  padding: 1rem 1.5rem 1rem 0;
   display: flex;
   flex-direction: column;
-  gap: 2rem; /* Space between each article */
+  justify-content: center; /* Center aligns the news text vertically against the image */
 }
 
 .news-list-card {
