@@ -484,3 +484,145 @@ body {
   background-color: #242424;
 }
 
+/* --- FIXTURES & RESULTS SPECIFIC STYLES --- */
+
+/* Filters Bar Layout */
+.filters-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg-card);
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.dropdown-select {
+  background-color: #121212;
+  color: var(--text-main);
+  border: 1px solid var(--border-color);
+  padding: 0.6rem 1rem;
+  border-radius: 4px;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.filter-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  font-weight: bold;
+}
+
+.date-nav-btn {
+  background: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.date-nav-btn:hover {
+  background-color: #333;
+}
+
+/* Fixtures List Container */
+.full-fixtures-list {
+  background-color: var(--bg-card);
+  border-radius: 8px;
+  margin-bottom: 3rem;
+  overflow: hidden; /* Keeps the top header inside the rounded corners */
+}
+
+.fixture-date-header {
+  background-color: #1A1A1A;
+  padding: 1rem 1.5rem;
+  font-weight: 700;
+  color: var(--text-main);
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* THE MAGIC GRID ROW
+  Locks the 6 columns to specific widths so every match lines up perfectly.
+  1fr = fractional space. It tells the home and away columns to share the leftover space equally.
+*/
+.fixture-list-row {
+  display: grid;
+  grid-template-columns: 80px 1fr 50px 1fr 150px 100px;
+  align-items: center;
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+  transition: background-color 0.2s ease;
+}
+
+.fixture-list-row:hover {
+  background-color: #242424;
+}
+
+.fixture-list-row:last-child {
+  border-bottom: none;
+}
+
+/* Individual Grid Column Styling */
+.fix-time {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.fix-vs {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #666;
+  font-weight: 800;
+}
+
+.fix-league {
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* Team columns use Flexbox internally to align the text with the logo */
+.fix-team {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 600;
+}
+
+/* Home team pushes content to the right edge */
+.fix-team.home {
+  justify-content: flex-end;
+  text-align: right;
+}
+
+/* Away team pushes content to the left edge */
+.fix-team.away {
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.mini-logo-placeholder {
+  font-size: 1.5rem;
+}
+
+/* View Button */
+.view-match-btn {
+  width: 100%;
+  background: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
+  padding: 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.view-match-btn:hover {
+  border-color: var(--accent-green);
+  color: var(--accent-green);
+}
+
