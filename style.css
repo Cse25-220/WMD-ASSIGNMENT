@@ -886,3 +886,117 @@ body {
   align-items: center;
 }
 
+
+/* ==========================================================================
+   RESPONSIVE DESIGN (MEDIA QUERIES)
+   ========================================================================== */
+
+/* --- 1. TABLET BREAKPOINT (Screens smaller than 900px) --- */
+@media screen and (max-width: 900px) {
+  
+  /* Global Page Padding Adjustment */
+  .page-container {
+    padding: 1.5rem;
+  }
+
+  /* News & Contact Page Grid Fix:
+     Turns the 2-column layout (Content + Sidebar) into a single column stack */
+  .news-page-layout, 
+  .contact-page-layout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  /* Make sidebars expand full-width at the bottom instead of squeezing */
+  .sidebar, 
+  .contact-details-sidebar {
+    width: 100%;
+  }
+
+  /* Teams & Leagues Page: Allow league cards to wrap to a new line nicely */
+  .teams-flex-row {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .team-badge-card {
+    flex: baseline;
+    width: calc(33.33% - 1rem); /* Fits 3 cards per row on tablets */
+  }
+}
+
+
+/* --- 2. MOBILE PHONE BREAKPOINT (Screens smaller than 600px) --- */
+@media screen and (max-width: 600px) {
+
+  /* The Header/Navigation Menu:
+     Stacks your brand logo and links vertically so they don't overlap */
+  .navbar {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .nav-menu {
+    flex-direction: row;
+    flex-wrap: wrap;       /* Lets menu links wrap cleanly if space runs out */
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  /* Hero Banner Adjustment: Reduce padding and size so it fits mobile screens */
+  .hero-banner {
+    padding: 1.5rem;
+    aspect-ratio: 4 / 3;   /* Shifts to a taller rectangle shape better suited for phone screens */
+    background-position: center top;
+  }
+
+  .hero-banner h1 {
+    font-size: 1.6rem;    /* Makes the giant headline smaller so it doesn't spill over */
+  }
+
+  /* Horizontal News Cards:
+     On mobile, side-by-side image and text gets too squished. 
+     This changes them into standard vertical cards. */
+  .news-list-card {
+    flex-direction: column;
+  }
+
+  .news-list-img {
+    width: 100%;          /* Image stretches full width of the card */
+    height: 200px;        /* Fixed height for vertical look */
+  }
+
+  .news-content {
+    padding: 1.5rem;      /* Adds clean padding all around the text underneath the photo */
+  }
+
+  /* Fixtures Page Grid Layout Override:
+     Drops the 6-column desktop table tracking and creates a stacked mobile view */
+  .fixture-list-row {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 0.75rem;
+    padding: 1.5rem;
+  }
+
+  .fix-team.home, 
+  .fix-team.away {
+    justify-content: center;
+    text-align: center;
+  }
+  
+  /* League Leaderboard Table: Allow horizontal scrolling so data isn't cut off */
+  .leaderboard-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .team-badge-card {
+    width: calc(50% - 1rem); /* Fits 2 cards per row on mobile phones */
+  }
+}
+
