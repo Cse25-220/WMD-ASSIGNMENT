@@ -474,10 +474,15 @@ body {
   border: 1px solid var(--border-color);
   border-radius: 8px;
   flex: 1;
-  min-width: 160px; /* Prevents cards from getting too squished */
+  min-width: 160px;
+  height: 180px;            /* FIX: Forces all 5 cards to stay the exact same height */
   padding: 1.5rem;
+  display: flex;            /* Uses flexbox inside the card to stack image and text */
+  flex-direction: column;
+  justify-content: center;  /* Centers everything vertically inside the card */
+  align-items: center;      /* Centers everything horizontally */
   text-align: center;
-  transition: border-color 0.2s ease;
+  box-sizing: border-box;   
 }
 
 .team-badge-card:hover {
@@ -858,10 +863,11 @@ body {
 
 /* Big Cards at the Top */
 .popular-team-logo {
-  width: 70px;          /* Perfect size to display details on the badge */
-  height: 70px;
+  width: 65px;          /* Perfect size to display details on the badge */
+  height: 65px;
   object-fit: contain;  /* Keeps the badge round/shield shape perfectly intact */
   margin-bottom: 1rem;  /* Pushes the team name text slightly down */
+  flex flex-shrink: 0;
 }
 
 /* Tiny Logos inside the Leaderboard Rows */
