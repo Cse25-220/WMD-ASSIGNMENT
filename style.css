@@ -853,3 +853,29 @@ body {
   transform: translateY(-2px);
 }
 
+
+/* --- LEAGUES & TEAMS IMAGE STYLES --- */
+
+/* Big Cards at the Top */
+.popular-team-logo {
+  width: 70px;          /* Perfect size to display details on the badge */
+  height: 70px;
+  object-fit: contain;  /* Keeps the badge round/shield shape perfectly intact */
+  margin-bottom: 1rem;  /* Pushes the team name text slightly down */
+}
+
+/* Tiny Logos inside the Leaderboard Rows */
+.table-crest {
+  width: 20px;          /* Tiny size to match the height of your text row */
+  height: 20px;
+  object-fit: contain;
+  vertical-align: middle; /* Alignment trick: aligns the logo center-line with text center-line */
+  margin-right: 0.75rem; /* Pushes the text name slightly to the right */
+}
+
+/* Fixes the table layout so images and text align perfectly sideways */
+.leaderboard-table .team-name-col {
+  display: flex;
+  align-items: center;
+}
+
