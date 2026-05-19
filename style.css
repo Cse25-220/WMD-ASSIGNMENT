@@ -72,6 +72,8 @@ body {
 /* --- 4. HERO BANNER --- */
 .hero-banner {
   height: 450px;
+  aspect-ratio: 16 / 7;  /* forcess a perfect wide screen image
+  
   /* CHANGE THIS LINE: Point it to your Real Madrid vs City match picture */
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), #000000), url('images/CITY\ VS\ MADRID.jpg');
   
