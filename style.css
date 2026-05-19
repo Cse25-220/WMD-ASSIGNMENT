@@ -1,3 +1,222 @@
 /* global attributes for consistency */
+/* --- 1. GLOBAL VARIABLES & RESET --- */
+:root {
+  --bg-dark: #121212;
+  --bg-card: #1E1E1E;
+  --accent-green: #4CAF50;
+  --text-main: #FFFFFF;
+  --text-muted: #A0A0A0;
+  --border-color: #333333;
+}
 
+/* Reset default browser margins to give us a clean slate */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensures padding doesn't increase element width */
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+}
+
+/* --- 2. NAVIGATION BAR (Flexbox) --- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 2rem;
+  background-color: #0A0A0A;
+  border-bottom: 2px solid #1A1A1A;
+  position: sticky; /* Keeps it at the top when scrolling */
+  top: 0;
+  z-index: 100;
+}
+
+.nav-brand {
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
+.green-text { color: var(--accent-green); }
+
+.nav-menu {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-link {
+  color: var(--text-main);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  position: relative;
+}
+
+.nav-link.active, .nav-link:hover {
+  color: var(--accent-green);
+}
+
+/* --- 3. PAGE LAYOUT WRAPPER --- */
+.home-container {
+  max-width: 1200px; /* Prevents the site from stretching too wide on big screens */
+  margin: 2rem auto; /* Centers the container */
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem; /* Space between Hero and Main Content */
+  padding: 0 1.5rem;
+}
+
+/* --- 4. HERO BANNER --- */
+.hero-banner {
+  height: 450px;
+  background-color: #2A2A2A; /* Fallback color if image is missing */
+  border-radius: 12px;
+  display: flex;
+  align-items: flex-end; /* Pushes text to the bottom */
+  padding: 3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content {
+  max-width: 600px;
+  z-index: 2; /* Keeps text above any background */
+}
+
+.breaking-badge {
+  background-color: var(--accent-green);
+  color: white;
+  padding: 0.3rem 0.8rem;
+  font-size: 0.75rem;
+  font-weight: 800;
+  border-radius: 4px;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin: 1rem 0;
+  text-transform: uppercase;
+}
+
+.cta-btn {
+  background-color: transparent;
+  color: var(--accent-green);
+  border: 2px solid var(--accent-green);
+  padding: 0.8rem 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 1rem;
+}
+
+.cta-btn:hover {
+  background-color: var(--accent-green);
+  color: white;
+}
+
+/* --- 5. MAIN CONTENT SPLIT (CSS Grid) --- */
+.content-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* News gets 2 parts space, Sidebar gets 1 part */
+  gap: 2rem;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.section-header h2 { font-size: 1.2rem; }
+.view-all { color: var(--accent-green); text-decoration: none; font-size: 0.85rem; font-weight: bold; }
+
+/* --- 6. NEWS GRID --- */
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Responsive columns */
+  gap: 1.5rem;
+}
+
+.news-card {
+  background-color: var(--bg-card);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.img-placeholder {
+  height: 150px;
+  background-color: #333; /* Grey box until you add real <img> tags */
+}
+
+.tag {
+  color: var(--accent-green);
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 1rem 1rem 0;
+  display: block;
+}
+
+.news-card h3 {
+  margin: 0.5rem 1rem;
+  font-size: 1rem;
+}
+
+.news-card .date {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  margin: 0 1rem 1rem;
+}
+
+/* --- 7. FIXTURES SIDEBAR --- */
+.sidebar {
+  background-color: var(--bg-card);
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.fixture-list { list-style: none; }
+
+.fixture-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.team { font-weight: bold; font-size: 0.9rem; }
+.match-info { text-align: center; }
+.match-info .vs { display: block; font-size: 0.8rem; color: #666; }
+.match-info .date { font-size: 0.75rem; color: var(--text-muted); }
+
+.view-all-btn {
+  width: 100%;
+  background: transparent;
+  color: var(--accent-green);
+  border: none;
+  padding: 1rem 0;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* --- 8. FOOTER --- */
+.main-footer {
+  background-color: #0A0A0A;
+  padding: 2rem;
+  border-top: 2px solid var(--border-color);
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.main-footer p {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  margin-top: 1rem;
+}
 
