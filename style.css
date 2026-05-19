@@ -626,3 +626,155 @@ body {
   color: var(--accent-green);
 }
 
+/* --- CONTACT PAGE SPECIFIC STYLES --- */
+
+.contact-page-layout {
+  display: grid;
+  grid-template-columns: 6fr 4fr; /* Form gets 60%, Info sidebar gets 40% */
+  gap: 4rem;
+  margin-bottom: 3rem;
+}
+
+.form-container h2, 
+.contact-details-sidebar h2 {
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.5rem;
+}
+
+/* Form Grouping & Field Control */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+/* Designing the Form inputs to blend with the dark theme */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form select,
+.contact-form textarea {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
+  padding: 0.85rem 1rem;
+  font-family: inherit;
+  font-size: 0.95rem;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+/* Gives a sleek glow on click/focus */
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  border-color: var(--accent-green);
+}
+
+/* Prevent textareas from being sized completely out of bounds by users */
+.contact-form textarea {
+  resize: vertical;
+}
+
+/* Submit Button */
+.submit-btn {
+  background-color: var(--accent-green);
+  color: white;
+  border: none;
+  padding: 1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  align-self: flex-start; /* Keeps the button from stretching full width */
+  padding: 1rem 2rem;
+}
+
+.submit-btn:hover {
+  background-color: #3e8e41;
+}
+
+/* --- CONTACT DETAILS SIDEBAR --- */
+.info-blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.info-icon {
+  font-size: 1.5rem;
+  background-color: #1A1A1A;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.info-text h4 {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 0.2rem;
+}
+
+.info-text p {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+/* Social media link layout */
+.social-follow h4 {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.social-icons-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-circle {
+  width: 35px;
+  height: 35px;
+  background-color: #1A1A1A;
+  color: var(--text-main);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.social-circle:hover {
+  background-color: var(--accent-green);
+  transform: translateY(-2px);
+}
+
