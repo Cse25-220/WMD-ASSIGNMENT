@@ -72,10 +72,14 @@ body {
 /* --- 4. HERO BANNER --- */
 .hero-banner {
   height: 450px;
-  background-color: #2A2A2A; /* Fallback color if image is missing */
+  /* CHANGE THIS LINE: Point it to your Real Madrid vs City match picture */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), #000000), url('images/CITY\ VS\ MADRID.jpg');
+  
+  background-size: cover;       /* Forces the picture to scale and fill the whole banner area */
+  background-position: center;  /* Centers the action so the players stay in frame */
   border-radius: 12px;
   display: flex;
-  align-items: flex-end; /* Pushes text to the bottom */
+  align-items: flex-end;        /* Keeps the text anchored at the bottom */
   padding: 3rem;
   position: relative;
   overflow: hidden;
