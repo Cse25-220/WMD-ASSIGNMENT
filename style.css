@@ -90,6 +90,13 @@ body {
   z-index: 2; /* Keeps text above any background */
 }
 
+.card-img {
+  width: 100%;          /* Stretches the image to perfectly match the width of its card */
+  height: 160px;        /* Fixes the height so all three cards stay completely even */
+  object-fit: cover;    /* Centers and crops the photo so the players don't look stretched */
+  display: block;       /* Removes unwanted default white space gaps below the image */
+}
+
 .breaking-badge {
   background-color: var(--accent-green);
   color: white;
