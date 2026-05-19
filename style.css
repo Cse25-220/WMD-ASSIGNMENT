@@ -77,8 +77,8 @@ body {
   /* CHANGE THIS LINE: Point it to your Real Madrid vs City match picture */
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), #000000), url('images/CITY\ VS\ MADRID.jpg');
   
-  background-size: cover;       /* Forces the picture to scale and fill the whole banner area */
-  background-position: 50% 0%;  /* Centers the action so the players stay in frame */
+  background-size: 100% auto;       /* Forces the picture to scale and fill the whole banner area */
+  background-position: center top;  /* Centers the action so the players stay in frame */
   border-radius: 12px;
   display: flex;
   align-items: flex-end;        /* Keeps the text anchored at the bottom */
