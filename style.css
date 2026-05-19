@@ -97,6 +97,20 @@ body {
   display: block;       /* Removes unwanted default white space gaps below the image */
 }
 
+.fixture-crest {
+  width: 22px;          /* Small, subtle size perfect for a list widget */
+  height: 22px;
+  object-fit: contain;  /* Keeps the round or shield shapes of the logos perfect */
+  flex-shrink: 0;       /* Prevents the browser from squeezing the logo if a team name is long */
+}
+
+/* Let's also adjust the alignment inside the team boxes to make sure they sit centered with text */
+.sidebar .team {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;          /* Space between the text name and the crest */
+}
+
 .breaking-badge {
   background-color: var(--accent-green);
   color: white;
