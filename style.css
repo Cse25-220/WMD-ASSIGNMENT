@@ -98,8 +98,8 @@ body {
 }
 
 .fixture-crest {
-  width: 27px;          /* Small, subtle size perfect for a list widget */
-  height: 27px;
+  width: 22px;          /* Small, subtle size perfect for a list widget */
+  height: 22px;
   object-fit: contain;  /* Keeps the round or shield shapes of the logos perfect */
   flex-shrink: 0;       /* Prevents the browser from squeezing the logo if a team name is long */
 }
