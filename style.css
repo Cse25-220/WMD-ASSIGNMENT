@@ -82,7 +82,7 @@ body {
   border-radius: 12px;
   display: flex;
   align-items: flex-end;        /* Keeps the text anchored at the bottom */
-  padding: 3rem;
+  padding: 2rem;
   position: relative;
   overflow: hidden;
 }
