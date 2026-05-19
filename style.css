@@ -866,8 +866,9 @@ body {
   width: 65px;          /* Perfect size to display details on the badge */
   height: 65px;
   object-fit: contain;  /* Keeps the badge round/shield shape perfectly intact */
-  margin-bottom: 1rem;  /* Pushes the team name text slightly down */
-  flex flex-shrink: 0;
+  margin: 0 auto 1rem auto;  /* Pushes the team name text slightly down */
+  display: block;
+
 }
 
 /* Tiny Logos inside the Leaderboard Rows */
