@@ -247,6 +247,68 @@ body {
   margin-top: 1rem;
 }
 
+/* --- SIDEBAR TRENDING STORIES --- */
+
+.trending-widget {
+  margin-top: 2.5rem; /* Separates it cleanly from the fixtures box above it */
+}
+
+.trending-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+/* Turns the link box into a clean horizontal container */
+.trending-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  color: var(--text-main);
+  padding: 0.5rem;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.trending-item:hover {
+  background-color: #242424; /* Subtle glow when hovered */
+}
+
+/* Tiny Thumbnail Styling */
+.trending-thumb {
+  width: 65px;
+  height: 65px;
+  object-fit: cover;
+  border-radius: 6px;
+  flex-shrink: 0; /* Locks the square aspect ratio */
+}
+
+.trending-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.mini-tag {
+  font-size: 0.7rem;
+  font-weight: 800;
+  color: var(--accent-green);
+  letter-spacing: 0.5px;
+}
+
+.trending-item h4 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.3;
+  margin: 0;
+  /* Multi-line truncation: clips long text to exactly 2 lines maximum */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 
 /* --- NEWS PAGE SPECIFIC STYLES --- */
 
