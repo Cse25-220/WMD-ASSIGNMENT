@@ -1062,3 +1062,12 @@ body {
   }
 }
 
+.article-link {
+  color: var(--text-main);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.article-link:hover {
+  color: var(--accent-green); /* Turns green when user hovers over it */
+}
