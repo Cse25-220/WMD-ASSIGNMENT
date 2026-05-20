@@ -1072,4 +1072,42 @@ body {
   color: var(--accent-green); /* Turns green when user hovers over it */
 }
 
+/* --- SINGLE ARTICLE PAGE VIEW --- */
+.single-article-view {
+  max-width: 800px;      /* Restricts line width so the text is incredibly easy to read */
+  margin: 0 auto;        /* Centers the article layout column on the monitor screen */
+  padding: 2rem 0;
+}
+
+.article-header h1 {
+  font-size: 2.5rem;
+  margin: 1rem 0;
+  color: #ffffff;
+}
+
+.article-main-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 2rem 0;
+}
+
+.article-body p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #cccccc;
+  margin-bottom: 1.5rem;
+}
+
+.back-home-btn {
+  display: inline-block;
+  margin-top: 2rem;
+  color: #4caf50;
+  text-decoration: none;
+  font-weight: 600;
+}
+.back-home-btn:hover {
+  text-decoration: underline;
+}
+
 
