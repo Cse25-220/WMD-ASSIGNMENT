@@ -355,7 +355,7 @@ body {
   background-color: var(--bg-card);
   border-radius: 8px;
   overflow: hidden;               /* Clips the image corners to the card's border radius */
-  gap: 1.5rem;                    /* Spacing between image and text content */
+  gap: 2.5rem;                    /* Spacing between image and text content */
 }
 
 /* 3. THE FIX: Constrain the News Image */
