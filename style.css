@@ -1062,12 +1062,54 @@ body {
   }
 }
 
-.article-link {
-  color: var(--text-main);
-  text-decoration: none;
-  transition: color 0.2s ease;
+/* --- EXPANDABLE STORY STYLES --- */
+
+/* Hide the default browser arrow */
+.story-accordion summary::-webkit-details-marker {
+  display: none;
+}
+.story-accordion summary {
+  list-style: none;
 }
 
-.article-link:hover {
-  color: var(--accent-green); /* Turns green when user hovers over it */
+/* Style the Read More trigger button */
+.read-more-btn {
+  display: inline-block;
+  background-color: transparent;
+  border: 1px solid var(--accent-green);
+  color: var(--accent-green);
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 1rem 0;
+  transition: all 0.2s ease;
+}
+
+.read-more-btn:hover {
+  background-color: var(--accent-green);
+  color: #121212;
+}
+
+/* Style the hidden text once it appears */
+.expanded-content {
+  padding-top: 0.5rem;
+  border-top: 1px dashed var(--border-color);
+  margin-bottom: 1rem;
+  animation: fadeIn 0.4s ease; /* Adds a smooth fade-in appearance */
+}
+
+.expanded-content p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+}
+
+/* Smooth Fade-in Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
 }
