@@ -1062,5 +1062,14 @@ body {
     width: calc(50% - 1rem); /* Fits 2 cards per row on mobile phones */
   }
 }
+.article-link {
+  color: var(--text-main);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.article-link:hover {
+  color: var(--accent-green); /* Turns green when user hovers over it */
+}
 
 
