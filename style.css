@@ -389,7 +389,7 @@ body {
 
 /* Main News Feed Images (Left Column) */
 .news-list-img {
-  width: 300px;         /* Keeps the landscape rectangle width from your wireframe */
+  width: 300px;         /* Keeps the landscape rectangle width  */
   height: 200px;        /* Fixes the height so all list items line up evenly */
   object-fit: cover;    /* Crops and scales smoothly without distorting the picture */
   flex-shrink: 0;       /* VERY IMPORTANT: Stops Flexbox from squishing the image width */
@@ -492,7 +492,7 @@ body {
 
 /* Main News Feed Images (Left Column) */
 .news-list-img {
-  width: 300px;         /* Keeps the landscape rectangle width from your wireframe */
+  width: 300px;         /* Keeps the landscape rectangle width */
   height: 200px;        /* Fixes the height so all list items line up evenly */
   object-fit: cover;    /* Crops and scales smoothly without distorting the picture */
   flex-shrink: 0;       /* VERY IMPORTANT: Stops Flexbox from squishing the image width */
