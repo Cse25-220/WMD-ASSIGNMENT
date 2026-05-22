@@ -29,7 +29,7 @@ body {
   align-items: center;
   padding: 1.25rem 2rem;
   background-color: #0A0A0A;
-  border-bottom: 2px solid #1A1A1A;
+  border-bottom: 0.125rem solid #1A1A1A; /* 2px -> 0.125rem */
   position: sticky; /* Keeps it at the top when scrolling */
   top: 0;
   z-index: 100;
@@ -61,7 +61,7 @@ body {
 
 /* --- 3. PAGE LAYOUT WRAPPER --- */
 .home-container {
-  max-width: 1200px; /* Prevents the site from stretching too wide on big screens */
+  max-width: 75rem; /* 1200px -> 75rem */
   margin: 2rem auto; /* Centers the container */
   display: flex;
   flex-direction: column;
@@ -72,14 +72,14 @@ body {
 /* --- 4. HERO BANNER --- */
 .hero-banner {
   height: 100%;
-  aspect-ratio: 16 / 7;  /* forcess a perfect wide screen image
+  aspect-ratio: 16 / 7;  /* forces a perfect wide screen image */
 
   /* CHANGE THIS LINE: Point it to your Real Madrid vs City match picture */
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), #000000), url('images/CITY\ VS\ MADRID.jpg');
   
   background-size: 100% auto;       /* Forces the picture to scale and fill the whole banner area */
   background-position: center top;  /* Centers the action so the players stay in frame */
-  border-radius: 12px;
+  border-radius: 0.75rem; /* 12px -> 0.75rem */
   display: flex;
   align-items: flex-end;        /* Keeps the text anchored at the bottom */
   padding: 2rem;
@@ -88,20 +88,20 @@ body {
 }
 
 .hero-content {
-  max-width: 600px;
+  max-width: 37.5rem; /* 600px -> 37.5rem */
   z-index: 2; /* Keeps text above any background */
 }
 
 .card-img {
   width: 100%;          /* Stretches the image to perfectly match the width of its card */
-  height: 160px;        /* Fixes the height so all three cards stay completely even */
+  height: 10rem;        /* 160px -> 10rem */
   object-fit: cover;    /* Centers and crops the photo so the players don't look stretched */
   display: block;       /* Removes unwanted default white space gaps below the image */
 }
 
 .fixture-crest {
-  width: 22px;          /* Small, subtle size perfect for a list widget */
-  height: 22px;
+  width: 1.375rem;          /* 22px -> 1.375rem */
+  height: 1.375rem;
   object-fit: contain;  /* Keeps the round or shield shapes of the logos perfect */
   flex-shrink: 0;       /* Prevents the browser from squeezing the logo if a team name is long */
 }
@@ -119,7 +119,7 @@ body {
   padding: 0.3rem 0.8rem;
   font-size: 0.75rem;
   font-weight: 800;
-  border-radius: 4px;
+  border-radius: 0.25rem; /* 4px -> 0.25rem */
 }
 
 .hero-content h1 {
@@ -131,11 +131,11 @@ body {
 .cta-btn {
   background-color: transparent;
   color: var(--accent-green);
-  border: 2px solid var(--accent-green);
+  border: 0.125rem solid var(--accent-green); /* 2px -> 0.125rem */
   padding: 0.8rem 1.5rem;
   font-weight: bold;
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: 0.25rem; /* 4px -> 0.25rem */
   margin-top: 1rem;
 }
 
@@ -155,7 +155,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid var(--border-color);
+  border-bottom: 0.125rem solid var(--border-color); /* 2px -> 0.125rem */
   padding-bottom: 0.5rem;
   margin-bottom: 1.5rem;
 }
@@ -166,18 +166,18 @@ body {
 /* --- 6. NEWS GRID --- */
 .news-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Responsive columns */
+  grid-template-columns: repeat(auto-fit, minmax(13.75rem, 1fr)); /* 220px -> 13.75rem */
   gap: 1.5rem;
 }
 
 .news-card {
   background-color: var(--bg-card);
-  border-radius: 8px;
+  border-radius: 0.5rem; /* 8px -> 0.5rem */
   overflow: hidden;
 }
 
 .img-placeholder {
-  height: 150px;
+  height: 9.375rem; /* 150px -> 9.375rem */
   background-color: #333; /* Grey box until you add real <img> tags */
 }
 
@@ -204,7 +204,7 @@ body {
 .sidebar {
   background-color: var(--bg-card);
   padding: 1.5rem;
-  border-radius: 8px;
+  border-radius: 0.5rem; /* 8px -> 0.5rem */
 }
 
 .fixture-list { list-style: none; }
@@ -214,7 +214,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 0;
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 0.0625rem solid var(--border-color); /* 1px -> 0.0625rem */
 }
 
 .team { font-weight: bold; font-size: 0.9rem; }
@@ -236,7 +236,7 @@ body {
 .main-footer {
   background-color: #0A0A0A;
   padding: 2rem;
-  border-top: 2px solid var(--border-color);
+  border-top: 0.125rem solid var(--border-color); /* 2px -> 0.125rem */
   margin-top: 3rem;
   text-align: center;
 }
@@ -248,7 +248,6 @@ body {
 }
 
 /* --- SIDEBAR TRENDING STORIES --- */
-
 .trending-widget {
   margin-top: 2.5rem; /* Separates it cleanly from the fixtures box above it */
 }
@@ -267,7 +266,7 @@ body {
   text-decoration: none;
   color: var(--text-main);
   padding: 0.5rem;
-  border-radius: 6px;
+  border-radius: 0.375rem; /* 6px -> 0.375rem */
   transition: background-color 0.2s ease;
 }
 
@@ -277,10 +276,10 @@ body {
 
 /* Tiny Thumbnail Styling */
 .trending-thumb {
-  width: 65px;
-  height: 65px;
+  width: 3.75rem; /* 60px/65px -> 3.75rem for consistency */
+  height: 3.75rem;
   object-fit: cover;
-  border-radius: 6px;
+  border-radius: 0.25rem; /* 4px/6px -> 0.25rem */
   flex-shrink: 0; /* Locks the square aspect ratio */
 }
 
@@ -294,7 +293,7 @@ body {
   font-size: 0.7rem;
   font-weight: 800;
   color: var(--accent-green);
-  letter-spacing: 0.5px;
+  letter-spacing: 0.03em; /* Converted to em for fine-tuning text tracking */
 }
 
 .trending-item h4 {
@@ -309,12 +308,11 @@ body {
   overflow: hidden;
 }
 
-
 /* --- NEWS PAGE SPECIFIC STYLES --- */
 
 /* Reusable container for internal pages */
 .page-container {
-  max-width: 1200px;
+  max-width: 75rem; /* 1200px -> 75rem */
   margin: 2rem auto;
   padding: 0 1.5rem;
 }
@@ -322,7 +320,7 @@ body {
 /* Breadcrumbs & Title */
 .page-header {
   margin-bottom: 2rem;
-  border-bottom: 2px solid var(--border-color);
+  border-bottom: 0.125rem solid var(--border-color);
   padding-bottom: 1rem;
 }
 
@@ -349,68 +347,31 @@ body {
   align-items: start;             /* Keeps the sidebar from stretching vertically */
 }
 
-/* 2. The Card Container */
+/* The Card Container */
 .news-list-card {
   display: flex;                  /* Forces image and text to sit side-by-side */
   background-color: var(--bg-card);
-  border-radius: 8px;
+  border-radius: 0.5rem;          /* 8px -> 0.5rem */
   overflow: hidden;               /* Clips the image corners to the card's border radius */
   gap: 1.5rem;                    /* Spacing between image and text content */
   margin-bottom: 1.5rem;
 }
 
-/* 3. THE FIX: Constrain the News Image */
+/* The News Image Constraints */
 .news-list-img {
-  width: 280px;         /* Explicit width for the horizontal card layout */
-  height: 180px;        /* Explicit uniform height */
+  width: 18.75rem;      /* Consolidated duplicated rule to 300px -> 18.75rem */
+  height: 12.5rem;       /* Consolidated duplicated rule to 200px -> 12.5rem */
   object-fit: cover;    /* Centers and crops the photo safely without stretching it */
   flex-shrink: 0;       /* CRITICAL: Stops the text from squishing the image width */
   display: block;
 }
 
-/* 4. Text Container Positioning */
-.news-content {
-  padding: 1rem 1.5rem 1rem 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* Center aligns the news text vertically against the image */
-}
-
-.news-list-card {
-  display: flex;
-  background-color: var(--bg-card);
-  border-radius: 8px;
-  overflow: hidden;
-  gap: 1.5rem; /* Space between image and text */
-}
-
-.img-placeholder-large {
-  /* --- NEWS PAGE IMAGES --- */
-
-/* Main News Feed Images (Left Column) */
-.news-list-img {
-  width: 300px;         /* Keeps the landscape rectangle width  */
-  height: 200px;        /* Fixes the height so all list items line up evenly */
-  object-fit: cover;    /* Crops and scales smoothly without distorting the picture */
-  flex-shrink: 0;       /* VERY IMPORTANT: Stops Flexbox from squishing the image width */
-}
-
-/* Trending News Thumbnails (Right Column Sidebar) */
-.trending-thumb {
-  width: 60px;          /* Makes a clean, tiny perfect square */
-  height: 60px;
-  object-fit: cover;    /* Centers the main focus of the image within the small box */
-  border-radius: 4px;   /* Slightly rounds the corners to look polished */
-  flex-shrink: 0;       /* Stops the text from pushing the image into a squished rectangle */
-}
-}
-  
-
+/* Text Container Positioning */
 .news-content {
   padding: 1.5rem 1.5rem 1.5rem 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center; /* Center aligns the news text vertically against the image */
 }
 
 .news-content h2 {
@@ -429,13 +390,13 @@ body {
 .widget {
   background-color: var(--bg-card);
   padding: 1.5rem;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   margin-bottom: 2rem;
 }
 
 .widget-title {
   font-size: 1rem;
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 0.0625rem solid var(--border-color);
   padding-bottom: 0.5rem;
   margin-bottom: 1rem;
 }
@@ -454,7 +415,7 @@ body {
   text-decoration: none;
   font-size: 0.9rem;
   background-color: transparent;
-  border-radius: 4px;
+  border-radius: 0.25rem;
   transition: background-color 0.2s;
 }
 
@@ -468,44 +429,8 @@ body {
   font-weight: bold;
 }
 
-/* Trending List Mini-Cards */
-.trending-list {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.trending-item {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  text-decoration: none;
-  color: var(--text-main);
-}
-
 .trending-item:hover h4 {
   color: var(--accent-green);
-}
-
-.img-placeholder-small {
-  /* --- NEWS PAGE IMAGES --- */
-
-/* Main News Feed Images (Left Column) */
-.news-list-img {
-  width: 300px;         /* Keeps the landscape rectangle width */
-  height: 200px;        /* Fixes the height so all list items line up evenly */
-  object-fit: cover;    /* Crops and scales smoothly without distorting the picture */
-  flex-shrink: 0;       /* VERY IMPORTANT: Stops Flexbox from squishing the image width */
-}
-
-/* Trending News Thumbnails (Right Column Sidebar) */
-.trending-thumb {
-  width: 60px;          /* Makes a clean, tiny perfect square */
-  height: 60px;
-  object-fit: cover;    /* Centers the main focus of the image within the small box */
-  border-radius: 4px;   /* Slightly rounds the corners to look polished */
-  flex-shrink: 0;       /* Stops the text from pushing the image into a squished rectangle */
-}
 }
 
 .trending-item h4 {
@@ -515,11 +440,10 @@ body {
 }
 
 /* --- TEAMS & LEAGUES SPECIFIC STYLES --- */
-
 .sub-section-title {
   font-size: 1.1rem;
   color: var(--text-main);
-  letter-spacing: 1px;
+  letter-spacing: 0.06em;
   margin-bottom: 1.5rem;
 }
 
@@ -534,11 +458,11 @@ body {
 
 .team-badge-card {
   background-color: var(--bg-card);
-  border: 1px solid var(--border-color);
-  border-radius: 8px;
+  border: 0.0625rem solid var(--border-color);
+  border-radius: 0.5rem;
   flex: 1;
-  min-width: 160px;
-  height: 180px;            /* FIX: Forces all 5 cards to stay the exact same height */
+  min-width: 10rem; /* 160px -> 10rem */
+  height: 11.25rem;    /* 180px -> 11.25rem */
   padding: 1.5rem;
   display: flex;            /* Uses flexbox inside the card to stack image and text */
   flex-direction: column;
@@ -578,7 +502,7 @@ body {
   width: 100%;
   border-collapse: collapse; /* Merges standard cell borders together for a clean look */
   background-color: var(--bg-card);
-  border-radius: 8px;
+  border-radius: 0.5rem;
   overflow: hidden; /* Clips row background corners to the table's border radius */
 }
 
@@ -598,7 +522,7 @@ body {
   padding: 1.2rem 1rem;
   text-align: center;
   font-size: 0.9rem;
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 0.0625rem solid var(--border-color);
 }
 
 /* Utility alignments to keep text columns left-aligned and numbers centered */
@@ -610,7 +534,7 @@ body {
 .pos-num {
   font-weight: bold;
   color: var(--text-muted);
-  width: 60px;
+  width: 3.75rem; /* 60px -> 3.75rem */
 }
 
 .pos-num.highlight {
@@ -636,16 +560,16 @@ body {
   align-items: center;
   background-color: var(--bg-card);
   padding: 1rem 1.5rem;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   margin-bottom: 2rem;
 }
 
 .dropdown-select {
   background-color: #121212;
   color: var(--text-main);
-  border: 1px solid var(--border-color);
+  border: 0.0625rem solid var(--border-color);
   padding: 0.6rem 1rem;
-  border-radius: 4px;
+  border-radius: 0.25rem;
   font-family: inherit;
   cursor: pointer;
 }
@@ -659,10 +583,10 @@ body {
 
 .date-nav-btn {
   background: transparent;
-  border: 1px solid var(--border-color);
+  border: 0.0625rem solid var(--border-color);
   color: var(--text-main);
   padding: 0.4rem 0.8rem;
-  border-radius: 4px;
+  border-radius: 0.25rem;
   cursor: pointer;
   transition: background-color 0.2s;
 }
@@ -674,7 +598,7 @@ body {
 /* Fixtures List Container */
 .full-fixtures-list {
   background-color: var(--bg-card);
-  border-radius: 8px;
+  border-radius: 0.5rem;
   margin-bottom: 3rem;
   overflow: hidden; /* Keeps the top header inside the rounded corners */
 }
@@ -684,19 +608,16 @@ body {
   padding: 1rem 1.5rem;
   font-weight: 700;
   color: var(--text-main);
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 0.0625rem solid var(--border-color);
 }
 
-/* THE MAGIC GRID ROW
-  Locks the 6 columns to specific widths so every match lines up perfectly.
-  1fr = fractional space. It tells the home and away columns to share the leftover space equally.
-*/
+/* THE MAGIC GRID ROW */
 .fixture-list-row {
   display: grid;
-  grid-template-columns: 80px 1fr 50px 1fr 150px 100px;
+  grid-template-columns: 5rem 1fr 3.125rem 1fr 9.375rem 6.25rem; /* Converted tracking definitions safely to rem */
   align-items: center;
   padding: 1.25rem 1.5rem;
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 0.0625rem solid var(--border-color);
   transition: background-color 0.2s ease;
 }
 
@@ -755,10 +676,10 @@ body {
 .view-match-btn {
   width: 100%;
   background: transparent;
-  border: 1px solid var(--border-color);
+  border: 0.0625rem solid var(--border-color);
   color: var(--text-main);
   padding: 0.5rem;
-  border-radius: 4px;
+  border-radius: 0.25rem;
   cursor: pointer;
   font-weight: 600;
   transition: all 0.2s ease;
@@ -770,7 +691,6 @@ body {
 }
 
 /* --- CONTACT PAGE SPECIFIC STYLES --- */
-
 .contact-page-layout {
   display: grid;
   grid-template-columns: 6fr 4fr; /* Form gets 60%, Info sidebar gets 40% */
@@ -781,9 +701,9 @@ body {
 .form-container h2, 
 .contact-details-sidebar h2 {
   font-size: 1.1rem;
-  letter-spacing: 1px;
+  letter-spacing: 0.06em;
   margin-bottom: 1.5rem;
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 0.0625rem solid var(--border-color);
   padding-bottom: 0.5rem;
 }
 
@@ -812,12 +732,12 @@ body {
 .contact-form select,
 .contact-form textarea {
   background-color: var(--bg-card);
-  border: 1px solid var(--border-color);
+  border: 0.0625rem solid var(--border-color);
   color: var(--text-main);
   padding: 0.85rem 1rem;
   font-family: inherit;
   font-size: 0.95rem;
-  border-radius: 6px;
+  border-radius: 0.375rem; /* 6px -> 0.375rem */
   outline: none;
   transition: border-color 0.2s ease;
 }
@@ -839,14 +759,13 @@ body {
   background-color: var(--accent-green);
   color: white;
   border: none;
-  padding: 1rem;
+  padding: 1rem 2rem;
   font-weight: bold;
-  letter-spacing: 1px;
-  border-radius: 6px;
+  letter-spacing: 0.06em;
+  border-radius: 0.375rem;
   cursor: pointer;
   transition: background-color 0.2s ease;
   align-self: flex-start; /* Keeps the button from stretching full width */
-  padding: 1rem 2rem;
 }
 
 .submit-btn:hover {
@@ -870,8 +789,8 @@ body {
 .info-icon {
   font-size: 1.5rem;
   background-color: #1A1A1A;
-  width: 45px;
-  height: 45px;
+  width: 2.8125rem; /* 45px -> 2.8125rem */
+  height: 2.8125rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -894,7 +813,7 @@ body {
   font-size: 0.85rem;
   color: var(--text-muted);
   margin-bottom: 1rem;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.03em;
 }
 
 .social-icons-row {
@@ -903,8 +822,8 @@ body {
 }
 
 .social-circle {
-  width: 35px;
-  height: 35px;
+  width: 2.1875rem; /* 35px -> 2.1875rem */
+  height: 2.1875rem;
   background-color: #1A1A1A;
   color: var(--text-main);
   text-decoration: none;
@@ -918,26 +837,24 @@ body {
 
 .social-circle:hover {
   background-color: var(--accent-green);
-  transform: translateY(-2px);
+  transform: translateY(-0.125rem);
 }
-
 
 /* --- LEAGUES & TEAMS IMAGE STYLES --- */
 
 /* Big Cards at the Top */
 .popular-team-logo {
-  width: 65px;          /* Perfect size to display details on the badge */
-  height: 65px;
+  width: 4.0625rem;    /* 65px -> 4.0625rem */
+  height: 4.0625rem;
   object-fit: contain;  /* Keeps the badge round/shield shape perfectly intact */
   margin: 0 auto 1rem auto;  /* Pushes the team name text slightly down */
   display: block;
-
 }
 
 /* Tiny Logos inside the Leaderboard Rows */
 .table-crest {
-  width: 20px;          /* Tiny size to match the height of your text row */
-  height: 20px;
+  width: 1.25rem;       /* 20px -> 1.25rem */
+  height: 1.25rem;
   object-fit: contain;
   vertical-align: middle; /* Alignment trick: aligns the logo center-line with text center-line */
   margin-right: 0.75rem; /* Pushes the text name slightly to the right */
@@ -949,21 +866,19 @@ body {
   align-items: center;
 }
 
-
 /* ==========================================================================
    RESPONSIVE DESIGN (MEDIA QUERIES)
-  
+   ========================================================================== */
 
-/* --- 1. TABLET BREAKPOINT (Screens smaller than 900px) --- */
-@media screen and (max-width: 900px) {
+/* --- 1. TABLET BREAKPOINT (Screens smaller than 56.25rem / 900px) --- */
+@media screen and (max-width: 56.25rem) {
   
   /* Global Page Padding Adjustment */
   .page-container {
     padding: 1.5rem;
   }
 
-  /* News & Contact Page Grid Fix:
-     Turns the 2-column layout (Content + Sidebar) into a single column stack */
+  /* News & Contact Page Grid Fix */
   .news-page-layout, 
   .contact-page-layout {
     grid-template-columns: 1fr;
@@ -989,12 +904,10 @@ body {
   }
 }
 
+/* --- 2. MOBILE PHONE BREAKPOINT (Screens smaller than 37.5rem / 600px) --- */
+@media screen and (max-width: 37.5rem) {
 
-/* --- 2. MOBILE PHONE BREAKPOINT (Screens smaller than 600px) --- */
-@media screen and (max-width: 600px) {
-
-  /* The Header/Navigation Menu:
-     Stacks your brand logo and links vertically so they don't overlap */
+  /* The Header/Navigation Menu */
   .navbar {
     flex-direction: column;
     gap: 1rem;
@@ -1009,7 +922,7 @@ body {
     gap: 1rem;
   }
 
-  /* Hero Banner Adjustment: Reduce padding and size so it fits mobile screens */
+  /* Hero Banner Adjustment */
   .hero-banner {
     padding: 1.5rem;
     aspect-ratio: 4 / 3;   /* Shifts to a taller rectangle shape better suited for phone screens */
@@ -1020,24 +933,21 @@ body {
     font-size: 1.6rem;    /* Makes the giant headline smaller so it doesn't spill over */
   }
 
-  /* Horizontal News Cards:
-     On mobile, side-by-side image and text gets too squished. 
-     This changes them into standard vertical cards. */
+  /* Horizontal News Cards */
   .news-list-card {
     flex-direction: column;
   }
 
   .news-list-img {
     width: 100%;          /* Image stretches full width of the card */
-    height: 200px;        /* Fixed height for vertical look */
+    height: 12.5rem;       /* 200px -> 12.5rem */
   }
 
   .news-content {
     padding: 1.5rem;      /* Adds clean padding all around the text underneath the photo */
   }
 
-  /* Fixtures Page Grid Layout Override:
-     Drops the 6-column desktop table tracking and creates a stacked mobile view */
+  /* Fixtures Page Grid Layout Override */
   .fixture-list-row {
     grid-template-columns: 1fr;
     text-align: center;
@@ -1062,6 +972,7 @@ body {
     width: calc(50% - 1rem); /* Fits 2 cards per row on mobile phones */
   }
 }
+
 .article-link {
   color: var(--text-main);
   text-decoration: none;
@@ -1074,7 +985,7 @@ body {
 
 /* --- SINGLE ARTICLE PAGE VIEW --- */
 .single-article-view {
-  max-width: 800px;      /* Restricts line width so the text is incredibly easy to read */
+  max-width: 50rem;      /* 800px -> 50rem */
   margin: 0 auto;        /* Centers the article layout column on the monitor screen */
   padding: 2rem 0;
 }
@@ -1088,7 +999,7 @@ body {
 .article-main-image img {
   width: 100%;
   height: auto;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   margin: 2rem 0;
 }
 
@@ -1106,8 +1017,7 @@ body {
   text-decoration: none;
   font-weight: 600;
 }
+
 .back-home-btn:hover {
   text-decoration: underline;
 }
-
-
