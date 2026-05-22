@@ -959,3 +959,20 @@ body {
 .back-home-btn:hover {
   text-decoration: underline;
 }
+
+/* Make league cards behave like clickable buttons */
+.team-badge-card {
+  cursor: pointer;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.team-badge-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent-green);
+}
+
+/* Visual indicator for which league filter is currently selected */
+.team-badge-card.active {
+  border-color: var(--accent-green);
+  background-color: rgba(76, 175, 80, 0.1); /* Subtle green tint background */
+}

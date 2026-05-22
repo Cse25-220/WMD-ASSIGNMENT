@@ -27,7 +27,7 @@
     </nav>
     </header>
 
-    <main class="page-container">
+   <main class="page-container">
 
   <div class="page-header">
     <p class="breadcrumbs"><a href="index.html">Home</a> > <span>Teams & Leagues</span></p>
@@ -35,33 +35,35 @@
   </div>
 
   <section class="popular-teams-section">
-    <h2 class="sub-section-title">POPULAR TEAMS</h2>
+    <h2 class="sub-section-title">POPULAR LEAGUES</h2>
     
+    <!-- Added data-league attributes to the cards -->
     <div class="teams-flex-row">
-      <div class="team-badge-card">
+      <div class="team-badge-card" data-league="premier-league">
         <img src="images/teams and  leagues/prem league.jpg" class="popular-team-logo">
         <h3>Premier League</h3>
       </div>
-      <div class="team-badge-card">
-       <img src = "images/teams and  leagues/La-liga-new-logo-red.png" class="popular-team-logo">
+      <div class="team-badge-card" data-league="la-liga">
+        <img src="images/teams and  leagues/La-liga-new-logo-red.png" class="popular-team-logo">
         <h3>La Liga</h3>
       </div>
-      <div class="team-badge-card">
+      <div class="team-badge-card" data-league="serie-a">
         <img src="images/teams and  leagues/1-serie-a-logo-new.jpg" class="popular-team-logo">
         <h3>Serie A</h3>
       </div>
-      <div class="team-badge-card">
+      <div class="team-badge-card" data-league="champions-league">
         <img src="images/teams and  leagues/bundesliga.png" class="popular-team-logo">
-        <h3>Champions league</h3>
+        <h3>Champions League</h3>
       </div>
-      <div class="team-badge-card">
-      <img src="images/teams and  leagues/laliga.jpg"  class="popular-team-logo">
+      <div class="team-badge-card" data-league="bundesliga">
+        <img src="images/teams and  leagues/laliga.jpg" class="popular-team-logo">
         <h3>Bundesliga</h3>
       </div>
     </div>
 
     <div class="centered-action">
-      <button class="cta-btn text-only">VIEW ALL TEAMS</button>
+      <!-- Added an ID here so this button can reset the filter and show all teams -->
+      <button class="cta-btn text-only" id="viewAllLeagues">VIEW ALL LEAGUES</button>
     </div>
   </section>
 
@@ -83,7 +85,8 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
+          <!-- Added data-league attributes to match the teams to their respective leagues -->
+          <tr data-league="premier-league">
             <td class="pos-num highlight">1</td>
             <td class="team-name-col align-left"><strong>Manchester City</strong></td>
             <td>24</td>
@@ -93,7 +96,7 @@
             <td>+32</td>
             <td class="pts-col">58</td>
           </tr>
-          <tr>
+          <tr data-league="la-liga">
             <td class="pos-num">2</td>
             <td class="team-name-col align-left">Real Madrid</td>
             <td>24</td>
@@ -103,7 +106,7 @@
             <td>+28</td>
             <td class="pts-col">56</td>
           </tr>
-          <tr>
+          <tr data-league="premier-league">
             <td class="pos-num">3</td>
             <td class="team-name-col align-left">Arsenal</td>
             <td>24</td>
@@ -113,7 +116,7 @@
             <td>+20</td>
             <td class="pts-col">52</td>
           </tr>
-          <tr>
+          <tr data-league="bundesliga">
             <td class="pos-num">4</td>
             <td class="team-name-col align-left">Bayern Munich</td>
             <td>24</td>
@@ -127,7 +130,6 @@
       </table>
     </div>
   </section>
-
 </main>
 
  <footer class="main-footer">
