@@ -979,6 +979,6 @@ body {
 
 /* try to make crests background blend well with the colour */
 
-.team-logo {
+.fixture-crest {
     mix-blend-mode: screen;
 }
