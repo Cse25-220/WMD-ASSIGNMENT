@@ -988,20 +988,4 @@ a {
   text-decoration: none;
 }
 
-.cta-btn {
-    display: inline-block; /* <-- This is the magic fix */
-    background-color: transparent;
-    color: var(--accent-green);
-    border: 0.125rem solid var(--accent-green); 
-    padding: 0.8rem 1.5rem;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 0.25rem; 
-    margin-top: 1rem;     
-    text-decoration: none;
-}
-
-.cta-btn:hover {
-  text-decoration: none;
-}
-
+.
