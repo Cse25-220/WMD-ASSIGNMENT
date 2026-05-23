@@ -134,6 +134,7 @@ body {
   cursor: pointer;
   border-radius: 0.25rem; 
   margin-top: 1rem;
+  text-decoration: none;
 }
 
 .cta-btn:hover {
