@@ -1004,3 +1004,11 @@ a {
 .cta-btn:hover {
   text-decoration: none;
 }
+
+.trending-item {
+  text-decoration: none;
+  width: 100%;
+  height: auto;
+  display: block;
+  boarder-radius: 0.5rem;
+} 
