@@ -982,3 +982,12 @@ body {
 .fixture-crest {
     mix-blend-mode: screen;
 }
+
+a {
+
+  text-decoration: none;
+}
+
+.cta-btn {
+  text-decoration: none;
+}
