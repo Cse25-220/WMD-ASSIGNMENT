@@ -976,3 +976,9 @@ body {
   border-color: var(--accent-green);
   background-color: rgba(76, 175, 80, 0.1); /* Subtle green tint background */
 }
+
+/* try to make crests background blend well with the colour */
+
+.team-logo {
+    mix-blend-mode: screen;
+}
