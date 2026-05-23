@@ -9,99 +9,140 @@
 </head>
 <body>
 
+  <header class="navbar">
+    <div class="nav-brand">
+      <span class="logo-text">MATCH DAY <span class="green-text">CENTRAL</span></span>
+    </div>
 
-
-    <header class="navbar">
-        <div class="nav-brand">
-            <span class="logo-text">MATCH DAY <span class="green-text">CENTRAL</span></span>
-            </div>
-
-        
     <nav class="nav-menu">
-        <a href="index.html" class="nav-link active">HOME</a>
-        <a href="news.html" class="nav-link">NEWS</a>
-        <a href="T-A-L.html" class="nav-link">TEAMS & LEAGUES</a>
-        <a href="F&R.html" class="nav-link">FIXTURES & RESULTS</a>
-        <a href="contact.html" class="nav-link">CONTACT</a>
+      <a href="index.html" class="nav-link active">HOME</a>
+      <a href="news.html" class="nav-link">NEWS</a>
+      <a href="T-A-L.html" class="nav-link">TEAMS & LEAGUES</a>
+      <a href="F&R.html" class="nav-link">FIXTURES & RESULTS</a>
+      <a href="contact.html" class="nav-link">CONTACT</a>
     </nav>
-    </header>
+  </header>
 
-    <main class="page-container">
+  <main class="page-container">
 
-  <div class="page-header">
-    <p class="breadcrumbs"><a href="index.html">Home</a> > <span>Fixtures & Results</span></p>
-    <h1>FIXTURES & RESULTS</h1>
-  </div>
-
-  <div class="filters-bar">
-    <div class="filter-left">
-      <select class="dropdown-select">
-        <option>All Competitions</option>
-        <option>Premier League</option>
-        <option>Champions League</option>
-        <option>La Liga</option>
-      </select>
+    <div class="page-header">
+      <p class="breadcrumbs"><a href="index.html">Home</a> > <span>Fixtures & Results</span></p>
+      <h1>FIXTURES & RESULTS</h1>
     </div>
-    
-    <div class="filter-right">
-      <button class="date-nav-btn" aria-label="Previous Month">&lt;</button>
-      <span class="current-date">May 2024</span>
-      <button class="date-nav-btn" aria-label="Next Month">&gt;</button>
+
+    <div class="filters-bar">
+      <div class="filter-left">
+        <select class="dropdown-select" id="league-filter">
+          <option value="all">All Competitions</option>
+          <option value="Premier League">Premier League</option>
+          <option value="Champions League">Champions League</option>
+          <option value="La Liga">La Liga</option>
+        </select>
+      </div>
+      
+      <div class="filter-right">
+        <button class="date-nav-btn" aria-label="Previous Month">&lt;</button>
+        <span class="current-date">May 2024</span>
+        <button class="date-nav-btn" aria-label="Next Month">&gt;</button>
+      </div>
     </div>
-  </div>
 
-  <section class="full-fixtures-list">
-    
-    <div class="fixture-date-header">Saturday, 25 May 2024</div>
+    <section class="full-fixtures-list">
+      
+      <div class="fixture-date-header">Saturday, 25 May 2024</div>
 
-    <article class="fixture-list-row">
-      <div class="fix-time">17:30</div>
-      
-      <div class="fix-team home">
-        <span>Manchester Utd</span>
-        <img src="images/man utd log remastered.jpg" class="fixture-crest">
-      </div>
-      
-      <div class="fix-vs">vs</div>
-      
-      <div class="fix-team away">
-        <img src="images/liverpool crest.png" alt="Arsenal crest" class="fixture-crest">
-        <span>Liverpool</span>
-      </div>
-      
-      <div class="fix-league">Premier League</div>
-      
-      <div class="fix-action">
-        <button class="view-match-btn">View</button>
-      </div>
-    </article>
+      <article class="fixture-list-row" data-league="Premier League">
+        <div class="fix-time">17:30</div>
+        
+        <div class="fix-team home">
+          <span>Manchester Utd</span>
+          <img src="images/man utd log remastered.jpg" alt="Manchester United crest" class="fixture-crest">
+        </div>
+        
+        <div class="fix-vs">vs</div>
+        
+        <div class="fix-team away">
+          <img src="images/liverpool crest.png" alt="Liverpool crest" class="fixture-crest">
+          <span>Liverpool</span>
+        </div>
+        
+        <div class="fix-league">Premier League</div>
+        
+        <div class="fix-action">
+          <button class="view-match-btn">View</button>
+        </div>
+      </article>
 
-    <article class="fixture-list-row">
-      <div class="fix-time">20:00</div>
-      
-      <div class="fix-team home">
-        <span>Arsenal</span>
-        <img src="images/arsenal logo.jpg" alt="Arsenal crest" class="fixture-crest">
-      </div>
-      
-      <div class="fix-vs">vs</div>
-      
-      <div class="fix-team away">
-        <img src="images/chelsea logo.jpg" alt="Chealsea crest" class="fixture-crest">
-        <span>Chelsea</span>
-      </div>
-      
-      <div class="fix-league">Premier League</div>
-      
-      <div class="fix-action">
-        <button class="view-match-btn">View</button>
-      </div>
-    </article>
+      <article class="fixture-list-row" data-league="Premier League">
+        <div class="fix-time">20:00</div>
+        
+        <div class="fix-team home">
+          <span>Arsenal</span>
+          <img src="images/arsenal logo.jpg" alt="Arsenal crest" class="fixture-crest">
+        </div>
+        
+        <div class="fix-vs">vs</div>
+        
+        <div class="fix-team away">
+          <img src="images/chelsea logo.jpg" alt="Chelsea crest" class="fixture-crest">
+          <span>Chelsea</span>
+        </div>
+        
+        <div class="fix-league">Premier League</div>
+        
+        <div class="fix-action">
+          <button class="view-match-btn">View</button>
+        </div>
+      </article>
 
-  </section>
-</main>
+      <article class="fixture-list-row" data-league="La Liga">
+        <div class="fix-time">21:00</div>
+        
+        <div class="fix-team home">
+          <span>Real Madrid</span>
+          <img src="images/real madrid logo.png" alt="Real Madrid crest" class="fixture-crest">
+        </div>
+        
+        <div class="fix-vs">vs</div>
+        
+        <div class="fix-team away">
+          <img src="images/barcelona logo.png" alt="Barcelona crest" class="fixture-crest">
+          <span>Barcelona</span>
+        </div>
+        
+        <div class="fix-league">La Liga</div>
+        
+        <div class="fix-action">
+          <button class="view-match-btn">View</button>
+        </div>
+      </article>
 
- <footer class="main-footer">
+      <article class="fixture-list-row" data-league="Champions League">
+        <div class="fix-time">20:45</div>
+        
+        <div class="fix-team home">
+          <span>Bayern Munich</span>
+          <img src="images/bayern logo.png" alt="Bayern Munich crest" class="fixture-crest">
+        </div>
+        
+        <div class="fix-vs">vs</div>
+        
+        <div class="fix-team away">
+          <img src="images/psg logo.png" alt="PSG crest" class="fixture-crest">
+          <span>PSG</span>
+        </div>
+        
+        <div class="fix-league">Champions League</div>
+        
+        <div class="fix-action">
+          <button class="view-match-btn">View</button>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <footer class="main-footer">
     <div class="footer-content">
       <div class="nav-brand">
         <span class="logo-icon">⚽</span>
@@ -111,7 +152,8 @@
     </div>
   </footer>
 
+  <!-- Link to the external JavaScript file -->
+  <script src="script.js"></script>
+
 </body>
 </html>
-
-

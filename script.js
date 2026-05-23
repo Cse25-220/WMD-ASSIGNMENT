@@ -42,3 +42,29 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+// F&R THE FIXTURE LIST DROPDOWN FILTER
+
+document.addEventListener('DOMContentLoaded', () => {
+  const leagueFilter = document.getElementById('league-filter');
+  const fixtureRows = document.querySelectorAll('.fixture-list-row');
+
+  leagueFilter.addEventListener('change', (e) => {
+    // Get the value selected in the dropdown (e.g., "La Liga")
+    const selectedLeague = e.target.value;
+
+    // Check every match row on the page
+    fixtureRows.forEach(row => {
+      // Get the league name stored in that specific row's data attribute
+      const rowLeague = row.getAttribute('data-league');
+
+      // If "All Competitions" is selected OR the row matches the selected league, show it
+      if (selectedLeague === 'all' || rowLeague === selectedLeague) {
+        row.style.display = ''; 
+      } else {
+        // Otherwise, hide it
+        row.style.display = 'none';
+      }
+    });
+  });
+});
