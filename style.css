@@ -991,3 +991,7 @@ a {
 .cta-btn {
   text-decoration: none;
 }
+
+.cta-btn:hover {
+  text-decoration: none;
+}
