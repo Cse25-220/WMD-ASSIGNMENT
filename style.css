@@ -125,7 +125,7 @@ body {
 }
 
 .cta-btn {
-  dispplay: inline-block;
+  display: inline-block;
   background-color: transparent;
   color: var(--accent-green);
   border: 0.125rem solid var(--accent-green); 
