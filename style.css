@@ -85,7 +85,7 @@ body {
 }
 
 .hero-content {
-  width: 60%; /* Replaced fixed 600px with % */
+  width: 60%; 
   z-index: 2; 
 }
 
@@ -145,8 +145,7 @@ body {
 /* --- 5. MAIN CONTENT SPLIT (CSS Grid) --- */
 .content-layout, .news-page-layout {
   display: grid;
-  /* Replaced 2fr 1fr with percentages. 
-     We use 65% and 31% to leave mathematical room for the 2rem gap */
+  
   grid-template-columns: 65% 31%; 
   justify-content: space-between;
 }
@@ -338,8 +337,8 @@ body {
 }
 
 .news-list-img {
-  width: 40%; /* Switched from fixed 300px to take up 40% of the horizontal card */
-  min-width: 12.5rem; /* Prevents it from getting too small before the breakpoint */
+  width: 40%; 
+  min-width: 12.5rem; 
   height: 12.5rem;       
   object-fit: cover;    
   flex-shrink: 0;       
@@ -418,7 +417,7 @@ body {
 .teams-flex-row {
   display: flex;
   justify-content: space-between;
-  gap: 2%; /* Switched to percentage gap */
+  gap: 2%; 
   margin-bottom: 1.5rem;
   flex-wrap: wrap; 
 }
@@ -427,7 +426,7 @@ body {
   background-color: var(--bg-card);
   border: 0.0625rem solid var(--border-color);
   border-radius: 0.5rem;
-  width: 18%; /* Fits 5 across nicely (18% * 5 = 90% + gaps) */
+  width: 18%;
   height: 11.25rem;    
   padding: 1.5rem;
   display: flex;            
@@ -496,7 +495,7 @@ body {
 .pos-num {
   font-weight: bold;
   color: var(--text-muted);
-  width: 10%; /* Percentage width for table columns */
+  width: 10%; 
 }
 
 .pos-num.highlight {
@@ -571,7 +570,7 @@ body {
 
 .fixture-list-row {
   display: grid;
-  /* Replaced strict values with percentages for a more fluid table simulation */
+
   grid-template-columns: 10% 30% 10% 30% 20%; 
   align-items: center;
   padding: 1.25rem 1.5rem;
